@@ -1,0 +1,47 @@
+@use '../abstracts' as *;
+
+*,
+*::after,
+*::before {
+    margin: 0;
+    padding: 0;
+    box-sizing: inherit;
+}
+
+html {
+    font-size: 62.5%; // 62,5% = 10px
+}
+
+body {
+    box-sizing: border-box;
+}
+
+.tabler-icon {
+    stroke: currentColor;
+    stroke-width: 2;
+    stroke-linecap: round;
+    stroke-linejoin: round;
+    fill: none;
+}
+
+.spinner {
+    margin: 5rem auto;
+    text-align: center;
+
+    svg {
+        width: 5rem;
+        height: 5rem;
+        stroke-width: 2;
+        animation: rotate 2s infinite linear;
+    }
+}
+
+@keyframes rotate {
+    0% {
+        transform: rotate(0);
+    }
+
+    100% {
+        transform: rotate(360deg);
+    }
+}
