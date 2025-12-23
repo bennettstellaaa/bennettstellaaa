@@ -1,0 +1,84 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1,viewport-fit=cover" />
+  <title>bennettstellaaa — links</title>
+  <meta name="description" content="bennettstellaaa — link page" />
+  <link rel="stylesheet" href="styles.css">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600;700&display=swap" rel="stylesheet">
+
+  <!-- Google tag (gtag.js) — ваш GA4 ID -->
+  <script async src="https://www.googletagmanager.com/gtag/js?id=G-XEW9KHMETQ"></script>
+  <script>
+    window.dataLayer = window.dataLayer || [];
+    function gtag(){dataLayer.push(arguments);}
+    gtag('js', new Date());
+    gtag('config', 'G-XEW9KHMETQ', { 'page_path': location.pathname });
+  </script>
+</head>
+<body>
+  <main class="page" role="main" aria-label="Link page">
+    <header class="profile" aria-hidden="false">
+      <img class="avatar" src="images/avatar.jpg" alt="avatar">
+      <h1 class="username">bennettstellaaa</h1>
+      <p class="bio">Want something special?.. 💗</p>
+
+      <div class="icons" aria-hidden="true">
+        <a class="icon-btn" href="https://www.instagram.com/bennettstellaaa/#" target="_blank" rel="noopener noreferrer" aria-label="Instagram">
+          <img src="assets/instagram.svg" alt="" class="asset-icon">
+        </a>
+        <a class="icon-btn" href="https://www.threads.com/@bennettstellaaa" target="_blank" rel="noopener noreferrer" aria-label="Threads">
+          <img src="assets/threads.svg" alt="" class="asset-icon">
+        </a>
+      </div>
+    </header>
+
+    <!-- Hero card (sensitive) -->
+    <section class="hero-card">
+      <button class="hero-button" id="heroBtn" data-href="https://dfans.co/stellaa" aria-label="Exclusive Content">
+        <img class="hero" src="images/hero.jpg" alt="hero">
+        <div class="card-caption">
+          <!-- inline lock SVG: preserveAspectRatio and stroke-width tuned -->
+          <svg class="caption-lock" viewBox="0 0 24 24" preserveAspectRatio="xMidYMid meet" aria-hidden="true" focusable="false">
+            <rect x="3.5" y="10.5" width="17" height="10" rx="2" ry="2" fill="none" stroke="currentColor" stroke-width="1.6"/>
+            <path d="M8 10.5V8.2A4 4 0 0 1 16 8.2V10.5" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"/>
+          </svg>
+
+          <span class="caption-text">Exclusive Content + Message me</span>
+        </div>
+      </button>
+
+      <!-- overlay 18+ -->
+      <div id="heroOverlay" class="hero-overlay" aria-hidden="true">
+        <div class="overlay-panel" role="dialog" aria-modal="true" aria-labelledby="overlayTitle">
+          <h3 id="overlayTitle">18+ — Mature content</h3>
+          <p>This link contains adult content. Click “Open link” again to proceed.</p>
+          <div class="overlay-actions">
+            <button id="overlayOpen" class="btn primary" aria-label="Open link">Open link</button>
+            <button id="overlayCancel" class="btn" aria-label="Cancel">Cancel</button>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- links -->
+    <nav class="links" aria-label="links list">
+      <a class="link" data-id="instagram" href="https://www.instagram.com/bennettstellaaa/#" target="_blank" rel="noopener noreferrer">
+        <img src="assets/instagram.svg" alt="" class="icon-left">
+        <span class="link-text">Instagram</span>
+      </a>
+
+      <a class="link" data-id="threads" href="https://www.threads.com/@bennettstellaaa" target="_blank" rel="noopener noreferrer">
+        <img src="assets/threads.svg" alt="" class="icon-left">
+        <span class="link-text">Threads</span>
+      </a>
+    </nav>
+  </main>
+
+  <footer class="footer">© 2025 bennettstellaaa</footer>
+
+  <script src="script.js"></script>
+</body>
+</html>
